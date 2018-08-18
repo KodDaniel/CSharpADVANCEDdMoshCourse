@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A30AA2FC-51DB-461A-BF4A-799D1E309F3D}</ProjectGuid>
+    <ProjectGuid>{F2914069-9D8C-4437-99B8-D32067792F9C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSharpAdvancedMoshCourse</RootNamespace>
-    <AssemblyName>CSharpAdvancedMoshCourse</AssemblyName>
+    <RootNamespace>LambdaExpression</RootNamespace>
+    <AssemblyName>LambdaExpression</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Player.cs" />
-    <Compile Include="PlayerEvaluate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

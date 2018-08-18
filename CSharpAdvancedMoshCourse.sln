@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpAdvancedMoshCourse", "CSharpAdvancedMoshCourse\CSharpAdvancedMoshCourse.csproj", "{A30AA2FC-51DB-461A-BF4A-799D1E309F3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate", "CSharpAdvancedMoshCourse\Delegate.csproj", "{A30AA2FC-51DB-461A-BF4A-799D1E309F3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpression", "LambdaExpression\LambdaExpression.csproj", "{F2914069-9D8C-4437-99B8-D32067792F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "EventsAndDelegates\EventsAndDelegates.csproj", "{65DAD008-D9E7-4169-9677-192598BEFDC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A30AA2FC-51DB-461A-BF4A-799D1E309F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A30AA2FC-51DB-461A-BF4A-799D1E309F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A30AA2FC-51DB-461A-BF4A-799D1E309F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2914069-9D8C-4437-99B8-D32067792F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2914069-9D8C-4437-99B8-D32067792F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2914069-9D8C-4437-99B8-D32067792F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2914069-9D8C-4437-99B8-D32067792F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65DAD008-D9E7-4169-9677-192598BEFDC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DAD008-D9E7-4169-9677-192598BEFDC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DAD008-D9E7-4169-9677-192598BEFDC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DAD008-D9E7-4169-9677-192598BEFDC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
