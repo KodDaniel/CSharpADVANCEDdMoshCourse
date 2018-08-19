@@ -17,8 +17,10 @@ namespace EventsAndDelegates
 
             // Instance of publisher.event of publisher += instance of subscriber.event handler of subscriber.
             videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
 
             videoEncoder.Encode(video);
+            Console.ReadLine();
 
         }
 

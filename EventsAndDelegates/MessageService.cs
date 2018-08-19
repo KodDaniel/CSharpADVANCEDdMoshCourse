@@ -10,9 +10,7 @@ namespace EventsAndDelegates
     {
         public void OnVideoEncoded(object soruce, EventArgs args)
         {
-            Console.WriteLine("Message Service: Sending text message");
-            Console.ReadLine();
-
+            Console.WriteLine("Message Service: Sending text message...");
         }
     }
 }
