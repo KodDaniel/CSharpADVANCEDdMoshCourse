@@ -7,25 +7,32 @@ using System.Threading.Tasks;
 
 namespace EventsAndDelegates
 {
-    class VideoEncoder
+    public class VideoEventArgs : EventArgs
     {
-        public delegate void VideoEncodedEventHandler(object source, EventArgs args); // Delegate
+        public Video Video { get; set; }
+    }
 
-        public event VideoEncodedEventHandler VideoEncoded; //Event
+    public class VideoEncoder
+    {
+
+        //public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args); // Custom Delegate
+
+        public event EventHandler<VideoEventArgs> VideoEncoded; //Event and Delegate in same
+
 
         public void Encode(Video video)
         {
             Console.WriteLine("Encoding video...");
             //Encoding är klart i och med Console.Writeline så nedan anropar vi Event Handler för att meddela våra subscribers om detta.
 
-            OnVideoEncoded(); // Anropar EventHandler
+            OnVideoEncoded(video); 
         }
 
-        protected virtual void OnVideoEncoded() // EventHandler 
+        protected virtual void OnVideoEncoded(Video video) 
         {
             if (VideoEncoded != null)
             {
-                VideoEncoded(this,EventArgs.Empty);
+                VideoEncoded(this,new VideoEventArgs(){Video = video});
             }
         }
 
